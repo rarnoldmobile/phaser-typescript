@@ -1,0 +1,16 @@
+{
+  "include": [
+    "src/**/*.ts"
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es5",
+    "module": "system",
+    "outFile": "dist/bundle.js",
+    "paths": {
+      "p2": ["node_modules/phaser/typescript/p2"],
+      "pixi": ["node_modules/phaser/typescript/pixi"],
+      "phaser": ["node_modules/phaser/typescript/phaser"]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "test-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test":         "echo \"Error: no test specified\" && exit 1",
+    "copy-vendor":  "copyfiles -u 3 node_modules/phaser/build/phaser.js dist/phaser-build",
+    "copy-index":   "copyfiles -u 1 src/index.html dist",
+    "build":        "npm run -s copy-vendor && npm run -s copy-index && tsc",
+    "watch":        "npm run -s build && tsc -w"
+  },
+  "author": "Robert Arnold",
+  "license": "MIT",
+  "devDependencies": {
+    "phaser": "^2.6.2",
+    "typescript": "^2.3.3"
+  }
+}
